@@ -1,0 +1,18 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+	"content_scripts": [{
+      "js": [ "content-script.js" ],
+      "matches": [ "*://*.instagram.com/*" ],
+      "run_at": "document_end"
+   }],
+   "web_accessible_resources": ["script.js"],
+   "description": "Search users who isn't following you back in Instagram",
+   "manifest_version": 2,
+   "name": "#FollowMeBack",
+   "permissions": [ "contextMenus", "tabs", "storage" ],
+   "short_name": "#FollowMeBack",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.1"
+}
